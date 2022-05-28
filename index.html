@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="stryle.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body id ="corpoPrincipal"onload="carregar2()">
 
   <header>
-    <h1>Calculadora</h1>
+    <h1>Calculadora Básica</h1>
   </header>
 
   <section id = "corpoSegundario">
 
     <div id="dados">
 
-      <p><strong class="tab2Text">Digite um número     </strong><input type="number" name="box4" id="tab">
-         <br><br><br>
+      <p><strong class="tab2Text">Digite o primeiro número:     </strong><input type="number" name="box4" id="tab">
+         <br><br><br><br>
 
-        <strong class ="tab2Text">Digite outro número </strong><input type="number" name="box4" id="tab2">
-        <br><br><br>
+        <strong class ="tab2Text">Digite outro número: </strong><input type="number" name="box4" id="tab2">
+        <br><br><br><br>
         
-        <strong class ="tab2Text"> Operação matematica </strong>
+        <strong class ="tab2Text"> Operação matematica desejada: </strong>
         <select name="" id="SeleMath">
-          <option value="">Tabuada</option>
+          <option value="">Opções</option>
           <option value="">Multiplicação</option>
           <option value="">Subtração</option>
           <option value="">Soma</option>
@@ -34,7 +36,7 @@
           <option value="">Porcentagem</option>
         </select>
         <br><br><br><br>
-        <input id ="botao" type="button" value="Gerar calculo" onclick="carregar2()">
+        <input id ="botao" type="button" value="Executar operação" onclick="carregar2()">
         <br><br><br>
 
       </p>
@@ -45,9 +47,9 @@
 
     <div id ="resultado">
 
-      <select name="tabb" id="sele" size = 11 >
+      <select name="tabb" id="sele" size = 8 >
       
-        <option value="">Digite os números acima</option>
+        <option value=""> Preencha os campos acima!</option>
 
       </select>
 
@@ -67,6 +69,6 @@
 
 </body>
 
-<script src="tabuada2.js"></script>
+<script src="app.js"></script>
 
 </html>

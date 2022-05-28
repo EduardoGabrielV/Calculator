@@ -10,11 +10,11 @@ function carregar2(){
    
      if(tabd.value.length === "" || Number(tabd.value <= 0 )){
    
-       window.alert("Por favor digite  um valor válido , qualquer número maior que zero");
+       window.alert("Para calcular, digite qualquer numero maior ou igual a Zero!");
    
      }else if(tabd2.value.length === "" || tabd2.value <= 0){
    
-       window.alert("Digite um outro número válido para concluir a operação matematica");
+       window.alert("Digite outro número válido para concluir a operação matematica");
    
      }else{
       
